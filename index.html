@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark Wheel Brasil | Tecnologia sem ar para irrigação agrícola</title>
+    <meta name="description" content="A Shark Wheel é a roda agrícola sem ar que reduz sulcos em 55%, nunca fura e tem reparos em 60 segundos. Tecnologia premiada para seu pivô central.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#006D77', // azul petróleo
+                        secondary: '#5C9E52', // verde agrícola
+                        light: '#F8F9FA', // cinza claro
+                        dark: '#212529',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            background-size: cover;
+            background-position: center;
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .how-it-works-step {
+            position: relative;
+            padding-left: 80px;
+        }
+        .how-it-works-step:before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #5C9E52;
+        }
+        .how-it-works-step:last-child:before {
+            display: none;
+        }
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        @media (max-width: 768px) {
+            .how-it-works-step {
+                padding-left: 60px;
+            }
+            .step-number {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20Shark%20Wheel" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg z-50 hover:bg-green-600 transition-all">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="flex items-center">
+                    <img src="header.png" alt="FP Agrícola" class="h-16">
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#sobre" class="text-gray-700 hover:text-primary transition">Sobre</a>
+                    <a href="#diferenciais" class="text-gray-700 hover:text-primary transition">Diferenciais</a>
+                    <a href="#funcionamento" class="text-gray-700 hover:text-primary transition">Como Funciona</a>
+                    <a href="#resultados" class="text-gray-700 hover:text-primary transition">Resultados</a>
+                    <a href="#contato" class="text-gray-700 hover:text-primary transition">Contato</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <a href="#contato" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition">Orçamento</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#sobre" class="block py-2 text-gray-700 hover:text-primary transition">Sobre</a>
+                <a href="#diferenciais" class="block py-2 text-gray-700 hover:text-primary transition">Diferenciais</a>
+                <a href="#funcionamento" class="block py-2 text-gray-700 hover:text-primary transition">Como Funciona</a>
+                <a href="#resultados" class="block py-2 text-gray-700 hover:text-primary transition">Resultados</a>
+                <a href="#contato" class="block py-2 text-gray-700 hover:text-primary transition">Contato</a>
+                <a href="#contato" class="block mt-2 bg-primary text-white px-6 py-2 rounded-md text-center hover:bg-opacity-90 transition">Orçamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative text-white py-20 md:py-32">
+        <div class="absolute inset-0 z-0">
+            <img src="farmin-main-banner2-e1730745606620.jpg" alt="fundo" class="w-full h-full object-cover"/>
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Tecnologia sem ar para o futuro da irrigação</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Até 55% menos sulcos, zero furos e reparos em apenas 60 segundos.
+Alta performance, durabilidade e inovação no campo.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                <a href="#contato" class="bg-secondary text-white px-8 py-3 rounded-md font-medium hover:bg-opacity-90 transition">Peça um orçamento</a>
+                <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20Shark%20Wheel" class="bg-white text-primary px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition">Fale com um consultor</a>
+            </div>
+        <div class="hero-video mt-6 flex justify-center">
+            <video controls autoplay muted loop class="rounded-lg max-w-full md:max-w-2xl">
+                <source src="Vídeo do WhatsApp de 2025-07-02 à(s) 16.22.46_5c3ce006.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo HTML5.
+            </video>
+        </div>
+    </div>
+    </section>
+
+   <!-- Sobre a Shark Wheel -->
+<section id="sobre" class="py-16 bg-light">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-primary">Inovação reconhecida internacionalmente</h2>
+    <p class="text-lg mb-4 mx-auto max-w-4x1">
+      A Shark Wheel é referência global em soluções para irrigação agrícola.  
+      Vencedora de 3 prêmios da National Science Foundation (NSF) e destaque no Top 10 da World Ag Expo 2024, sua roda sem ar representa um novo padrão de eficiência no campo.
+    </p>
+    <p class="text-lg mx-auto max-w-4x1">
+      Desenvolvida ao longo de 3 anos de testes com líderes da indústria, a tecnologia agora está disponível no Brasil por meio da FP Agrícola, distribuidora oficial da marca.
+    </p>
+  </div>
+</section>
+
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-primary">Por que escolher a Shark Wheel?</h2>
+                <p class="text-lg max-w-2xl mx-auto">Tecnologia inovadora que resolve os principais problemas das rodas agrícolas tradicionais</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="feature-icon bg-primary bg-opacity-10 text-primary mb-4">
+                        <i class="fas fa-tractor text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">55% menos sulcos</h3>
+                    <p class="text-gray-600 text-center">Resultado comprovado em testes de campo, preservando o solo e reduzindo valas.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="feature-icon bg-primary bg-opacity-10 text-primary mb-4">
+                        <i class="fas fa-wind text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Sem ar (nunca fura)</h3>
+                    <p class="text-gray-600 text-center">Estrutura sólida que nunca fura, sem manutenção com câmara ou pressão.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="feature-icon bg-primary bg-opacity-10 text-primary mb-4">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Reparos em 60 segundos</h3>
+                    <p class="text-gray-600 text-center">Design modular permite substituição rápida de pás no próprio campo.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="feature-icon bg-primary bg-opacity-10 text-primary mb-4">
+                        <i class="fas fa-dna text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Pegada DNA</h3>
+                    <p class="text-gray-600 text-center">O formato senoidal exclusivo empurra o solo para o centro, reduzindo a compactação.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="feature-icon bg-primary bg-opacity-10 text-primary mb-4">
+                        <i class="fas fa-arrows-alt-h text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Tração bidirecional</h3>
+                    <p class="text-gray-600 text-center">Funciona igualmente bem em qualquer sentido de movimento.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="feature-icon bg-primary bg-opacity-10 text-primary mb-4">
+                        <i class="fas fa-cogs text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Compatível com todos os pivôs</h3>
+                    <p class="text-gray-600 text-center">Valley, Reinke, Zimmatic, T-L e outros sistemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="funcionamento" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-primary">Como funciona a Shark Wheel</h2>
+                <p class="text-lg max-w-2xl mx-auto">A Shark Wheel foi desenvolvida com base em princípios de design avançado e testes extensivos no campo. Cada detalhe da roda foi pensado para oferecer mais desempenho, durabilidade e cuidado com o solo irrigado.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="how-it-works-step mb-8">
+                    <div class="step-number bg-primary text-white">1</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold mb-3">Design Senoidal</h3>
+                        <p>A Shark Wheel utiliza um padrão de onda senoidal na superfície de contato, inspirado no movimento natural das asas de uma gaivota. Essa geometria inovadora reduz a compactação do solo e melhora a tração, mesmo em terrenos desafiadores.</p>
+                    </div>
+                </div>
+                
+                <div class="how-it-works-step mb-8">
+                    <div class="step-number bg-primary text-white">2</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold mb-3">Pegada DNA</h3>
+                        <p>A roda forma uma trilha em espiral semelhante a uma dupla hélice de DNA. Isso distribui a pressão de forma uniforme, empurrando o solo para o centro e reduzindo a formação de sulcos profundos, problema comum em rodas tradicionais.</p>
+                    </div>
+                </div>
+                
+                <div class="how-it-works-step mb-8">
+                    <div class="step-number bg-primary text-white">3</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold mb-3">Pás Flexíveis e Modulares</h3>
+                        <p>Cada roda é composta por pás independentes que se flexionam sob carga, absorvendo impactos e minimizando o estresse no trem de força. Caso alguma pá quebre, ela pode ser substituída diretamente no campo em até 60 segundos.</p>
+                    </div>
+                </div>
+                
+                <div class="how-it-works-step">
+                    <div class="step-number bg-primary text-white">4</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold mb-3">Compatibilidade Universal</h3>
+                        <p>A Shark Wheel é compatível com as principais marcas de pivôs de irrigação, como Valley, Zimmatic, Reinke, T-L e pode ser instalada com facilidade, seguindo o alinhamento ideal: roda dianteira às 12h, traseira às 11h.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#contato" class="bg-primary text-white px-8 py-3 rounded-md font-medium hover:bg-opacity-90 transition">Quero saber mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados Comprovados -->
+    <section id="resultados" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-primary">Desempenho testado. Resultados reais.</h2>
+                <p class="text-lg max-w-2xl mx-auto">Dados de testes realizados em condições reais de campo</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row md:items-center gap-8">
+                <div class="md:w-1/2"> 
+                    <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Em testes comparativos</h3>
+                        <div class="flex justify-between items-end h-48 mb-4">
+                            <div class="text-center">
+                                <div class="bg-gray-300 mx-auto" style="width: 60px; height: 140px;"></div>
+                                <p class="mt-2">Roda Tradicional</p>
+                                <p class="font-bold">0,35m</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-secondary mx-auto" style="width: 60px; height: 50px;"></div>
+                                <p class="mt-2">Shark Wheel</p>
+                                <p class="font-bold">0,02m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold mb-4">Isso significa:</h3>
+                    <ul class="text-gray-700 space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-seedling text-secondary text-xl mt-1"></i>
+                            <span>Menos dano ao solo</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-tractor text-secondary text-xl mt-1"></i>
+                            <span>Menor risco de atolamento</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-chart-line text-secondary text-xl mt-1"></i>
+                            <span>Mais rendimento e economia no ciclo de irrigação</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <div class="mt-6 bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Depoimento de Cliente</h3>
+                    <!-- Grid de dois depoimentos com espaçamento -->
+                     <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Cliente 1 -->
+                         <div class="flex items-start">
+                            <img src="ChatGPT Image 8 de jul. de 2025, 11_42_44.png" alt="Cliente" class="rounded-full w-16 h-16 mr-4">
+                            <div>
+                                <p class="italic mb-2">"Instalamos a Shark Wheel em 2023 e não tivemos nenhum problema com furos desde então. A diferença na formação de sulcos é absurda."</p>
+                                <p class="font-semibold">João Silva</p>
+                                <p class="text-sm text-gray-600">Produtor de soja - Cristalina, GO</p>
+                            </div>
+                        </div>
+                        <!-- Cliente 2 -->
+                         <div class="flex items-start">
+                            <img src="ChatGPT Image 8 de jul. de 2025, 11_54_22.png" alt="Cliente" class="rounded-full w-16 h-16 mr-4">
+                            <div>
+                                <p class="italic mb-2">"A instalação foi simples, e o resultado no campo foi visível em menos de uma semana."</p>
+                                <p class="font-semibold">Marcelo L.</p>
+                                <p class="text-sm text-gray-600">Eng. Agrônomo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-primary">Perguntas Frequentes</h2>
+                <p class="text-lg max-w-2xl mx-auto">Tire suas dúvidas sobre a Shark Wheel</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-4">
+                    <button class="faq-question w-full text-left p-4 font-medium flex justify-between items-center">
+                        <span>A roda funciona em qualquer tipo de solo?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t hidden">
+                        <p>Sim, ela é projetada para funcionar em terrenos compactados, úmidos ou arenosos, com tração eficiente.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-4">
+                    <button class="faq-question w-full text-left p-4 font-medium flex justify-between items-center">
+                        <span>Posso instalar sozinho?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t hidden">
+                        <p>Sim. A roda chega pré-montada, e basta fixar 3 pás com os parafusos inclusos.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-4">
+                    <button class="faq-question w-full text-left p-4 font-medium flex justify-between items-center">
+                        <span>Preciso de braço articulado?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t hidden">
+                        <p>Não é necessário. A roda funciona perfeitamente em instalações padrão, mas pode ser adaptada.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-4">
+                    <button class="faq-question w-full text-left p-4 font-medium flex justify-between items-center">
+                        <span>Qual a garantia?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t hidden">
+                        <p>5 anos de garantia limitada para uso adequado em sistemas de irrigação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Orçamento -->
+    <section id="contato" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Fale com a equipe técnica ou solicite um orçamento</h2>
+                <p class="text-lg max-w-2xl mx-auto">Preencha o formulário e nossa equipe entrará em contato para oferecer a melhor solução para sua propriedade</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-dark">Informações de Contato</h3>
+                        
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-1">Nome completo*</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-secondary text-dark">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-1">E-mail*</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-secondary text-dark">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-1">Telefone*</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-secondary text-dark">
+                            </div>
+                            
+                            <div>
+                                <label for="machine" class="block text-gray-700 mb-1">Tipo de máquina*</label>
+                                <select id="machine" name="machine" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-secondary text-dark">
+                                    <option value="">Selecione...</option>
+                                    <option value="Valley">Valley</option>
+                                    <option value="Zimmatic">Zimmatic</option>
+                                    <option value="Reinke">Reinke</option>
+                                    <option value="T-L">T-L</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-1">Mensagem</label>
+                                <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-secondary text-dark"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-secondary text-white py-3 rounded-md font-medium hover:bg-opacity-90 transition">Enviar solicitação</button>
+                        </form>
+                    </div>
+                    
+                    <div class="md:w-1/2 bg-primary bg-opacity-90 p-8 text-white">
+                        <h3 class="text-2xl font-semibold mb-6">Fale conosco</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Endereço</h4>
+                                    <p>Av. das Indústrias, 1000<br>Bairro Industrial<br>Uberlândia - MG</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Telefone</h4>
+                                    <p>(34) 1234-5678</p>
+                                    <p class="mt-1">(34) 98765-4321</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">E-mail</h4>
+                                    <p>contato@fpagricola.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Horário de atendimento</h4>
+                                    <p>Segunda a sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4">
+                                <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20Shark%20Wheel" class="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition">
+                                    <i class="fab fa-whatsapp mr-2"></i> Fale via WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <img src="footer.png" alt="FP Agrícola" class="h-16 mb-4">
+                    <p class="mb-4">Representante oficial Shark Wheel no Brasil</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-secondary transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-secondary transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-secondary transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-secondary transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">Links úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Manuais</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Vídeos</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Seja um revendedor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">Institucional</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition">Sobre a FP Agrícola</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Política de privacidade</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Termos de uso</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Assine nossa newsletter</h4>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l text-dark focus:outline-none">
+                        <button type="submit" class="bg-secondary px-4 py-2 rounded-r hover:bg-opacity-90 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <p class="text-sm mt-2 text-gray-400">Receba novidades e ofertas especiais</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 FP Agrícola. Todos os direitos reservados.</p>
+                <p class="mt-2 text-sm">Shark Wheel é uma marca registrada. Representação exclusiva no Brasil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would normally send the form data to your server
+            // For this example, we'll just show an alert
+            alert('Obrigado pelo seu interesse! Nossa equipe entrará em contato em breve.');
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
