@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark Wheel Brasil | Tecnologia sem ar para irrigação agrícola</title>
+    <meta name="description" content="A Shark Wheel é a roda agrícola sem ar que reduz sulcos em 55%, nunca fura e tem reparos em 60 segundos. Tecnologia premiada para seu pivô central.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#006D77', // azul petróleo
+                        secondary: '#5C9E52', // verde agrícola
+                        light: '#F8F9FA', // cinza claro
+                        dark: '#212529',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            background-size: cover;
+            background-position: center;
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .how-it-works-step {
+            position: relative;
+            padding-left: 80px;
+        }
+        .how-it-works-step:before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #5C9E52;
+        }
+        .how-it-works-step:last-child:before {
+            display: none;
+        }
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        @media (max-width: 768px) {
+            .how-it-works-step {
+                padding-left: 60px;
+            }
+            .step-number {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark">
+    <!-- WhatsApp Float Button -->
+    <a href="https://api.whatsapp.com/send/?phone=5561999772272&text=Gostaria+de+saber+mais+sobre+as+rodas+Shark+Wheel&type=phone_number&app_absent=0" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg z-50 hover:bg-green-600 transition-all">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="flex items-center">
+                    <img src="Logo pai black.png" alt="FP Agrícola" class="h-16">
+                </a>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative text-white py-20 md:py-32">
+        <div class="absolute inset-0 z-0">
+            <img src="farmin-main-banner2-e1730745606620.jpg" alt="fundo" class="w-full h-full object-cover"/>
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Sobre a FP Agrícola</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">A FP Agrícola é uma empresa brasileira focada em oferecer soluções inovadoras e eficazes para o agronegócio. Com sede em Goiás e atendimento em todo o território nacional, somos os representantes oficiais da tecnologia Shark Wheel no Brasil a revolucionária roda sem ar que está transformando a forma como os produtores irrigam suas lavouras.
+
+Nosso compromisso é com a eficiência no campo: levamos tecnologia de ponta, suporte técnico especializado e produtos que realmente geram resultados, como a roda que reduz até 55% dos sulcos e elimina o risco de furos, garantindo mais produtividade e economia para o produtor rural.
+
+Acreditamos que o futuro do agro é sustentável, inteligente e tecnológico e é com esse propósito que atuamos todos os dias, contribuindo para o desenvolvimento de um campo mais eficiente e preparado para os desafios do amanhã.</p>
+          <div class="hero-video mt-6 flex justify-center">
+            <video controls autoplay muted loop class="rounded-lg max-w-full md:max-w-2xl">
+                <source src="Vídeo do WhatsApp de 2025-07-02 à(s) 16.22.46_5c3ce006.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo HTML5.
+            </video>
+        </div>
+    </div>
+</section>
+</body>
+</html>
