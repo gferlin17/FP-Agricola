@@ -1,27 +1,17 @@
-# FP Agrícola – Institutional Website
+# FP Agrícola — Shark Wheel Brasil
 
-Institutional website developed for FP Agrícola, official distributor of Shark Wheel in Brazil.
+Site institucional desenvolvido para a **FP Agrícola**, distribuidora oficial da **Shark Wheel** no Brasil.  
+O projeto tem como objetivo apresentar a tecnologia das rodas sem ar para irrigação agrícola, destacando diferenciais, resultados de campo e canais de contato.
 
-## Technologies
-- HTML5
-- Tailwind CSS (CDN)
-- JavaScript (Vanilla)
+---
 
-## Features
-- Responsive layout
-- Mobile navigation menu
-- FAQ accordion
-- Contact form integration
-- Promotional popup
-- SEO-friendly structure
+## 🔗 Link importante
+- 🇧🇷 **Site FP Agrícola (Brasil):** https://sharkwheelbrasil.com.br
 
-## Project Structure
-- assets: images, videos and PDFs
-- js: UI interactions and behaviors
-- styles: custom CSS overrides
+---
 
-## What I learned
-- Building and organizing a real-world project
-- Tailwind CSS utility-first workflow
-- DOM manipulation with vanilla JavaScript
-- Structuring assets for scalability
+## 🛠️ Tecnologias utilizadas
+- HTML5  
+- Tailwind CSS  
+- JavaScript (Vanilla)  
+- Font Awesome
